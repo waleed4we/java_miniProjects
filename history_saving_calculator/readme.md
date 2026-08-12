@@ -44,19 +44,19 @@ A Simple **Java Console-Based Calculator** That Performs Basic Arithmetic Operat
 
 ### Calculator Menu
 
-  ![[menu_and_exit.png]]
+![Calculator Menu](screenshots/menu_and_exit.png)
 
 ### Performing A Calculation
   
-![[performing_a_calculation.png]]
+![Performing A Calculation](screenshots/performing_a_calculation.png)
 
 ### Viewing Calculation History
 
-  ![[viewing_history.png]]
+![Viewing Calculation History](screenshots/viewing_history.png)
 
 ### Clearing Calculation History
 
-![[clearing_history.png]]
+![Clearing Calculation History](screenshots/clearing_history.png)
 
 ## 📂 Project Structure
 
