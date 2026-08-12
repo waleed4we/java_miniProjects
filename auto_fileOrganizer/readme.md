@@ -52,11 +52,11 @@ The user simply provides the path of a folder, and the program scans its files, 
 
 ### Before — Messy Folder
 
-![[before.png]]
+![Before](screenshots/before.png)
 
 ### After — Organized Folder
 
-![[after.png]]
+![After](screenshots/after.png)
 ---
 
 ## 🔄 Duplicate File Handling
