@@ -1,6 +1,6 @@
 <div align="center">
 
-# Java Auto File Organizer
+<h1> Java Auto File Organizer </h1>
 
 ![Java](https://img.shields.io/badge/Java-17%2B-orange?style=for-the-badge&logo=openjdk&logoColor=white) ![Automation](https://img.shields.io/badge/Automation-blue?style=for-the-badge) ![Console App](https://img.shields.io/badge/Console_App-lightgrey?style=for-the-badge) ![OS File Handling](https://img.shields.io/badge/OS_File_Handling-green?style=for-the-badge)
 
@@ -13,8 +13,8 @@
 **Java Auto File Organizer** is a Java-based console application designed to organize files inside a messy folder automatically
 The user simply provides the path of a folder, and the program scans its files, identifies their extensions, creates appropriate category folders, and moves the files into their respective categories
 
----
-## Demo Video
+
+<img src="./demo/demo.gif" alt="Java Auto File Organizer Demo" width="800">
 
 
 ---
@@ -214,5 +214,7 @@ Make sure you provide the correct folder path and keep backups of important file
 ## 👨‍💻 Author
 
 **Malik Waleed Hussain**
+
 **Data Analytics / Coder / Computer Science Student**
+
 GitHub: **@waleed4we**
