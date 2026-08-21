@@ -1,5 +1,4 @@
-# History Saving Calculator In Java
-
+# 🧮 History Saving Calculator In Java
 
 <p align="center">
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white">
@@ -11,52 +10,76 @@
   <img src="https://img.shields.io/badge/Exception%20Handling-Enabled-8B0000?style=for-the-badge">
 </p>
 
-A Simple **Java Console-Based Calculator** That Performs Basic Arithmetic Operations And Automatically Saves Successful Calculations To A Local History File
+<p align="center"><i>A simple Java console calculator that performs basic arithmetic and automatically saves every successful calculation to a local history file.</i></p>
+
+---
+
+## 📑 Table of Contents
+
+- [Features](#-features)
+- [Technologies & Concepts Used](#️-technologies--concepts-used)
+- [Screenshots](#-screenshots)
+- [Project Structure](#-project-structure)
+- [How To Run](#️-how-to-run)
+- [How It Works](#-how-it-works)
+- [History System](#-history-system)
+- [Input Handling](#️-input-handling)
+- [Project Purpose](#-project-purpose)
+- [Author](#-author)
+
+---
 
 ## 🚀 Features
 
-- Perform Simple Mathematical Operations Like + , - , * , / , %
-- Save Successful Calculations To History
-- View Saved Calculation History
-- Clear Calculation History
-- Handles Invalid Number Input , Invalid Operators, Division By Zero
-- Also Handles Modulo By Zero And Invalid Menu Input
-- Displays A Message When No History Is Found
+- ➕➖✖️➗ Performs basic arithmetic: `+`, `-`, `*`, `/`, `%`
+- 💾 Saves every successful calculation to history
+- 📜 View saved calculation history
+- 🧹 Clear calculation history
+- 🛡️ Handles invalid numbers, invalid operators, and division by zero
+- 🛡️ Also handles modulo by zero and invalid menu input
+- ℹ️ Displays a message when no history is found
+
+---
 
 ## 🛠️ Technologies & Concepts Used
 
-- **Java**
-- **Console Application**
-- **Conditional Flow** — `if-else`
-- **Switch Statements**
-- **Loops** — `while`
-- **Methods**
-- **Arrays**
-- **Strings**
-- **Scanner** — User Input
-- **File Handling**
-	- **BufferedReader**
-	- **BufferedWriter**
-- **Exception Handling**
+<div align="center">
 
+| Category | Details |
+|:---:|:---|
+| ☕ Language | Java (Console Application) |
+| 🔀 Control Flow | `if-else` · `switch` · `while` loops |
+| 🧩 Structures | Methods · Arrays · Strings |
+| ⌨️ Input | `Scanner` |
+| 📁 File Handling | `BufferedReader` · `BufferedWriter` |
+| 🛡️ Robustness | Exception Handling |
+
+</div>
+
+---
 
 ## 📸 Screenshots
 
-### Calculator Menu
+<table align="center">
+<tr>
+<th>Calculator Menu</th>
+<th>Performing A Calculation</th>
+</tr>
+<tr>
+<td><img src="screenshots/menu_and_exit.png" alt="Calculator Menu" width="400"></td>
+<td><img src="screenshots/performing_a_calculation.png" alt="Performing A Calculation" width="400"></td>
+</tr>
+<tr>
+<th>Viewing Calculation History</th>
+<th>Clearing Calculation History</th>
+</tr>
+<tr>
+<td><img src="screenshots/viewing_history.png" alt="Viewing Calculation History" width="400"></td>
+<td><img src="screenshots/clearing_history.png" alt="Clearing Calculation History" width="400"></td>
+</tr>
+</table>
 
-![Calculator Menu](screenshots/menu_and_exit.png)
-
-### Performing A Calculation
-  
-![Performing A Calculation](screenshots/performing_a_calculation.png)
-
-### Viewing Calculation History
-
-![Viewing Calculation History](screenshots/viewing_history.png)
-
-### Clearing Calculation History
-
-![Clearing Calculation History](screenshots/clearing_history.png)
+---
 
 ## 📂 Project Structure
 
@@ -73,35 +96,40 @@ history_saving_calculator/
 └── readme.md
 ```
 
-> `history.txt` Is Created Automatically By The Program And Is Intentionally Not Included In The Repository Because It Contains Personal Calculation History
+> [!NOTE]
+> `history.txt` is created automatically by the program and is intentionally **not included** in the repository, since it contains personal calculation history.
+
+---
 
 ## ▶️ How To Run
 
-### 1. Clone The Repository
+### 1️⃣ Clone the Repository
 
 ```bash
 git clone YOUR_REPOSITORY_URL
 ```
 
-### 2. Open The Project
+### 2️⃣ Open the Project
 
-Open The `history_saving_calculator` Folder In Your Java IDE Or VS Code.
+Open the `history_saving_calculator` folder in your Java IDE or VS Code.
 
-### 3. Compile The Program
+### 3️⃣ Compile the Program
 
 ```bash
 javac java_calculator.java
 ```
 
-### 4. Run The Program
+### 4️⃣ Run the Program
 
 ```bash
 java java_calculator
 ```
 
+---
+
 ## 🧮 How It Works
 
-When The Program Starts, You Can Choose From Four Options:
+When the program starts, you can choose from four options:
 
 ```
 1 → Perform A Calculation
@@ -110,37 +138,29 @@ When The Program Starts, You Can Choose From Four Options:
 4 → Exit The Calculator
 ```
 
-For Calculations, Enter An Expression Using Spaces Between Numbers And Operator.
-
-Example:
+For calculations, enter an expression using spaces between the numbers and the operator — for example:
 
 ```
 10 + 5
 ```
 
-The Calculator Takes The Complete Expression As A **String** Using `Scanner`.
+<details>
+<summary><b>🔍 Click to see the full parsing & calculation walkthrough</b></summary>
+<br>
 
-The Entered Expression:
+The calculator takes the complete expression as a **String** using `Scanner`, and stores it in the `user_choice` variable:
 
 ```
 10 + 5
 ```
 
-Is Stored In The `user_choice` String Variable.
+The program then trims extra spaces and splits the expression on a space:
 
-The Program Then Removes Extra Spaces At The Beginning And End Of The Expression And Splits The Expression Using A Space:
-
-```
+```java
 String[] parts = user_choice.trim().split(" ");
 ```
 
-For Example:
-
-```
-10 + 5
-```
-
-Is Split Into Three Parts:
+This splits `10 + 5` into three parts:
 
 ```
 parts[0] → 10
@@ -148,21 +168,13 @@ parts[1] → +
 parts[2] → 5
 ```
 
-The Three Parts Represent:
+representing:
 
-- `parts[0]` → First Number
+- `parts[0]` → First number
 - `parts[1]` → Operator
-- `parts[2]` → Second Number
+- `parts[2]` → Second number
 
-The Program First Checks That The Expression Contains Exactly Three Parts.
-
-If The Format Is Invalid, The User Is Asked To Enter The Expression Again.
-
-The First And Second Parts Are Then Converted From `String` Into `double` Using `Double.parseDouble()`.
-
-The Operator Remains A `String` And Is Used In A `switch` Statement To Determine Which Mathematical Operation Should Be Performed.
-
-The Calculator Supports:
+The program first checks that the expression contains exactly three parts — if the format is invalid, the user is asked to re-enter it. The first and second parts are then converted from `String` to `double` using `Double.parseDouble()`. The operator stays a `String` and is used in a `switch` statement to determine which operation runs:
 
 ```
 + → Addition
@@ -172,31 +184,21 @@ The Calculator Supports:
 % → Modulo
 ```
 
-For Example:
-
-```
-10 + 5
-```
-
-The Program Performs:
-
-```
-10 + 5 = 15.0
-```
-
-And Displays:
+For `10 + 5`, the program computes `15.0` and displays:
 
 ```
 Result: 15.0
 ```
 
-Successful Calculations Are Automatically Saved To `history.txt`.
+Successful calculations are automatically saved to `history.txt`.
+
+</details>
 
 ---
+
 ## 📜 History System
 
-The Calculator Uses Java File Handling To Store Calculation History.
-Each Successful Calculation Is Saved In This Format:
+The calculator uses Java file handling to store calculation history. Each successful calculation is saved in this format:
 
 ```text
 10 + 5 : 15.0
@@ -204,43 +206,45 @@ Each Successful Calculation Is Saved In This Format:
 100 / 4 : 25.0
 ```
 
-The History Can Be:
-- Viewed
-- Appended With New Calculations
-- Cleared Completely
+The history can be:
+
+- 👀 Viewed
+- ➕ Appended with new calculations
+- 🧹 Cleared completely
+
+---
 
 ## ⚠️ Input Handling
 
-The Program Handles Common Invalid Inputs Such As:
+The program handles common invalid inputs such as:
 
-- Invalid Menu Choices
-- Invalid Numbers
-- Invalid Operators
-- Division By Zero
-- Modulo By Zero
-- Empty History
+- Invalid menu choices
+- Invalid numbers
+- Invalid operators
+- Division by zero
+- Modulo by zero
+- Empty history
+
+---
 
 ## 🎯 Project Purpose
 
-This Mini Project Was Built To Practice Core Java Concepts Such As:
+This mini project was built to practice core Java concepts, including:
 
-- Variables
-- Conditional Statements
-- Loops
-- Switch Statements
-- Methods
-- Arrays
-- Strings
-- Exception Handling
-- File Reading And Writing
-- User Input Handling
+- Variables · Conditional statements · Loops
+- Switch statements · Methods · Arrays · Strings
+- Exception handling
+- File reading and writing
+- User input handling
 
 ---
+
 ## 👨‍💻 Author
 
 **Malik Waleed Hussain**
-**Data Analytics / Coder / Computer Science Student**
-GitHub: **@waleed4we**
+*Data Analytics / Coder / Computer Science Student*
+GitHub: [**@waleed4we**](https://github.com/waleed4we)
 
 ---
-A Beginner-Level Java Project Built As Part Of My Java Mini Projects Collection.
+
+<p align="center"><i>A beginner-level Java project built as part of my Java Mini Projects collection.</i></p>
