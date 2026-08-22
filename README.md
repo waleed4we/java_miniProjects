@@ -1,6 +1,6 @@
 <div align="center">
 
-<big><big><b>☕ Java Mini Projects</b></big></big>
+<big><big><b>Java Mini Projects</b></big></big>
 
 A collection of small Java projects built to practice programming concepts,
 problem-solving, object-oriented thinking, file handling, and practical application development.
