@@ -3,7 +3,7 @@
 <big><big><b>Java Mini Projects</b></big></big>
 
 A collection of small Java projects built to practice programming concepts,
-problem-solving, object-oriented thinking, file handling, and practical application development.
+problem-solving, object-oriented thinking, file handling, and practical application development
 
 </div>
 
@@ -19,7 +19,7 @@ problem-solving, object-oriented thinking, file handling, and practical applicat
 
 <b>🧮 History Saving Calculator</b>
 
-A console-based calculator that performs basic arithmetic operations and saves calculation history for later reference.
+A console-based calculator that performs basic arithmetic operations and saves calculation history for later reference
 
 <br>
 
