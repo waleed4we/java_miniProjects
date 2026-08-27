@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/badge/Exception%20Handling-Enabled-8B0000?style=for-the-badge">
 </p>
 
-<p align="center"><i>A simple Java console calculator that performs basic arithmetic and automatically saves every successful calculation to a local history file.</i></p>
+<p align="center"><i>A Java console calculator that performs basic arithmetic and automatically saves every successful calculation to a local history file.</i></p>
 
 ---
 
