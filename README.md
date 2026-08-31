@@ -105,7 +105,7 @@ New projects will be added as I continue learning and building with Java.
 
 <br>
 
-> Learning Java by building, experimenting, and solving problems.
+> Learning Java By Building, Experimenting, And Solving Problems.
 
 <div align="center">
 
