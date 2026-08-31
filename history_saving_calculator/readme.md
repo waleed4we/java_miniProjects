@@ -31,7 +31,7 @@
 
 ## 🚀 Features
 
-- ➕➖✖️➗ Performs basic arithmetic: `+`, `-`, `*`, `/`, `%`
+- ➕➖✖️➗ Performs basic arithmetic Operations : `+`, `-`, `*`, `/`, `%`
 - 💾 Saves every successful calculation to history
 - 📜 View saved calculation history
 - 🧹 Clear calculation history
