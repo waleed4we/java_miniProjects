@@ -90,7 +90,7 @@ A console-based file organizer that automatically scans a selected folder and so
 
 <big><b>🎯 Purpose</b></big>
 
-This repository contains small Java projects created to strengthen programming fundamentals,
+This Repository Contains Small Java Projects Created To Strengthen Programming Fundamentals,
 improve problem-solving skills, and gain practical experience by building useful applications.
 
 Each project focuses on applying Java concepts to a practical problem rather than only practicing isolated code examples.
