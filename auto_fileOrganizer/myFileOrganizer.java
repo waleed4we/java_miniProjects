@@ -63,7 +63,7 @@ public class myFileOrganizer {
                                 counter++;
                             }
 
-                            renamed_files++;
+                            renamed_files++ ;
 
                             boolean moved = myFiles.renameTo(destination_file);
                             if (!moved) {
