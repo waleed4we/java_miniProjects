@@ -17,7 +17,7 @@ problem-solving, object-oriented thinking, file handling, and practical applicat
 <tr>
 <td width="50%">
 
-<b>🧮 History Saving Calculator</b>
+<b>🧮 History Saving Calculator </b>
 
 A console-based calculator that performs basic arithmetic operations and saves calculation history for later reference
 
@@ -43,7 +43,7 @@ A console-based calculator that performs basic arithmetic operations and saves c
 
 <b>📁 Auto File Organizer</b>
 
-A console-based file organizer that automatically scans a selected folder and sorts files into categories based on their extensions.
+A Console-Based file organizer that automatically scans a selected folder and sorts files into categories based on their extensions.
 
 <br>
 
