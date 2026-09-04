@@ -9,7 +9,7 @@ problem-solving, object-oriented thinking, file handling, and practical applicat
 
 <br>
 
-<big><b>📂 Projects</b></big>
+<big><b>📂 My Projects</b></big>
 
 <br>
 
